@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: rgb(173, 167, 167);
+}
+
+div{
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.green{
+    background-color: green;
+}
+.purple{
+    background-color: purple;
+}
+.yellow{
+    background-color: yellow;
+}
+.red{
+    background-color: salmon;
+}
+.pink{
+    background-color: pink;
+}
+
+@keyframes wave {
+    0%{
+        transform: translateY(0px);
+    }
+
+    20%{
+        transform: translateY(-50px);
+    }
+
+    40%{
+        transform: translateY(0px);
+    }
+
+    60%{
+        transform: translateY(-50px);
+    }
+    80%{
+        transform: translateY(0px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+
+section:hover .green{
+    animation: wave 6s infinite;
+}
+
+section:hover .purple{
+    animation: wave 6s 1s infinite;
+}
+
+section:hover .yellow{
+    animation: wave 6s 1.4s infinite;
+}
+
+section:hover .red{
+    animation: wave 6s 1.8s infinite;
+}
+
+section:hover .pink{
+    animation: wave 6s 2.2s infinite;
+}
+
